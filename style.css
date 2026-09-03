@@ -43,6 +43,7 @@ body {
     margin: 0;
     animation: gradientShift 30s linear infinite;
     background-size: 400% 400%;
+    cursor: url("images/favicon.png"), auto;
 
 }
 
