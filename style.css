@@ -43,7 +43,7 @@ body {
     margin: 0;
     animation: gradientShift 30s linear infinite;
     background-size: 400% 400%;
-    cursor: url("images/favicon.png"), auto;
+    cursor: url("images/cursor.png"), auto;
 
 }
 
@@ -359,4 +359,16 @@ main {
 .coming-soon {
     background: #cbcbcb;
     width: fit-content;
+}
+.grain-blur-word {
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.grain-blur-word:hover {
+    filter: blur(4px);
+}
+a {
+    color: inherit;
+    text-decoration: none;
 }

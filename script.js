@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
   const loader = document.getElementById('loader');
   const blob = loader.querySelector('.blob');
   const grain = loader.querySelector('.grain');
-  const vignette = loader.querySelector('.vignette');
+  const vignette = loader.querySelector('.vignette'); 
 
   setTimeout(() => {
     blob.style.transition = 'opacity 3s ease';
@@ -21,3 +21,10 @@ window.addEventListener('load', () => {
 
   }, 900);
 });
+
+const paragraph = document.getElementById('intro');
+const wordToBlur = 'Javascript Studio'; 
+
+const regex = new RegExp(`\\b(${wordToBlur})\\b`, 'gi');
+
+paragraph.innerHTML = paragraph.innerHTML.replace(regex, '<span class="grain-blur-word">$1</span>');
